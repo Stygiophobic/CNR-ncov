@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "colorings": [
+      {
+        "key": "num_date",
+        "title": "Sampling date",
+        "type": "continuous"
+      },
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      }
+    ],
+    "filters": [],
+    "panels": [
+      "tree"
+    ],
+    "title": "NEXTRAIN VISUALISATION",
+    "updated": "2020-03-19"
+  },
+  "tree": {
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "name": "hCoV-19_France_RA739_2020",
+        "node_attrs": {
+          "div": 5.549595010017104e-06,
+          "num_date": {
+            "value": 2020.1051912568305
+          }
+        }
+      },
+      {
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "C243T",
+              "-1607A",
+              "-1608T",
+              "-1609G",
+              "C3039T",
+              "C14410T",
+              "A23405G"
+            ]
+          }
+        },
+        "children": [
+          {
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "name": "hCoV-19_France_GE1973_2020",
+            "node_attrs": {
+              "div": 0.00012822886081778105,
+              "num_date": {
+                "value": 2020.1734972677596
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G25565T"
+                ]
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C1061T",
+                      "G28859A"
+                    ]
+                  }
+                },
+                "name": "hCoV-19_France_IDF2075_2020",
+                "node_attrs": {
+                  "div": 0.00022855699276127844,
+                  "num_date": {
+                    "value": 2020.1680327868853
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C2418T"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T12724C"
+                        ]
+                      }
+                    },
+                    "name": "hCoV-19_France_HF1995_2020",
+                    "node_attrs": {
+                      "div": 0.00022855285283791978,
+                      "num_date": {
+                        "value": 2020.1734972677596
+                      }
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A12747G",
+                          "C20236T"
+                        ]
+                      }
+                    },
+                    "name": "hCoV-19_France_HF2174_2020",
+                    "node_attrs": {
+                      "div": 0.00026199769218322174,
+                      "num_date": {
+                        "value": 2020.1871584699454
+                      }
+                    }
+                  }
+                ],
+                "name": "NODE_0000002",
+                "node_attrs": {
+                  "div": 0.00019510999543731619,
+                  "num_date": {
+                    "value": 2020.166311536118
+                  }
+                }
+              }
+            ],
+            "name": "NODE_0000001",
+            "node_attrs": {
+              "div": 0.0001616695009606578,
+              "num_date": {
+                "value": 2020.159542460824
+              }
+            }
+          }
+        ],
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 0.00012822886081778005,
+          "num_date": {
+            "value": 2020.1560036553751
+          }
+        }
+      }
+    ],
+    "name": "NODE_0000003",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2020.1051912568305
+      }
+    }
+  },
+  "version": "v2"
+}
