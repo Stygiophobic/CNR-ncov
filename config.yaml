@@ -1,0 +1,2 @@
+input_sequence: "/srv/nfs/ngs-stockage/NGS_Virologie/HadrienR/ncov-data/sequences.fasta"
+input_metadata: "/srv/nfs/ngs-stockage/NGS_Virologie/HadrienR/ncov-data/metadata.tsv"
