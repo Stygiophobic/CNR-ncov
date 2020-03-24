@@ -4,10 +4,14 @@ singularity_img="/srv/nfs/ngs-stockage/NGS_Virologie/NEXTSTRAIN/nextstrainV4.sim
 
 #singularity shell /srv/nfs/ngs-stockage/NGS_Virologie/NEXTSTRAIN/nextstrainV4.simg
 
+tr " " "_" < /srv/nfs/ngs-stockage/NGS_Virologie/HadrienR/ncov-data/gisaid_cov2020_sequences.fasta > /srv/nfs/ngs-stockage/NGS_Virologie/HadrienR/ncov-data/sequences_temp.fasta
+tr "|" "_" < /srv/nfs/ngs-stockage/NGS_Virologie/HadrienR/ncov-data/sequences_temp.fasta > /srv/nfs/ngs-stockage/NGS_Virologie/HadrienR/ncov-data/sequences.fasta
+
+
 fasta="/srv/nfs/ngs-stockage/NGS_Virologie/HadrienR/ncov-data/sequences.fasta"
 metadata="/srv/nfs/ngs-stockage/NGS_Virologie/HadrienR/ncov-data/metadata.tsv"
 
-singularity exec $singularity_img snakemake \
+k5start -U -f /home/chu-lyon.fr/regueex/login.kt --  nohup singularity exec $singularity_img snakemake \
                                     --config input_sequence=$fasta \
-                                             input_metadata=$metadata
+                                             input_metadata=$metadata > /srv/nfs/ngs-stockage/NGS_Virologie/HadrienR/ncov-data/CR.txt &
 

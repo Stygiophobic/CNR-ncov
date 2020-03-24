@@ -4,12 +4,12 @@ metadata=config['input_metadata']
 
 rule all:
     input:
-        filtered_seq = "temp/seq_filtered.fasta"  ,
-        align_fasta = "temp/seq_align.fasta" ,
-        raw_tree = "temp/tree_raw.nwk" ,
-        tree = "temp/tree.nwk",
-        node_data = "temp/tree_branch_lengths.json" ,
-        node_data_mut = "temp/tree_nt_muts.json" ,
+        #filtered_seq = "temp/seq_filtered.fasta"  ,
+        #align_fasta = "temp/seq_align.fasta" ,
+        #raw_tree = "temp/tree_raw.nwk" ,
+        #tree = "temp/tree.nwk",
+        #node_data = "temp/tree_branch_lengths.json" ,
+        #node_data_mut = "temp/tree_nt_muts.json" ,
         auspice_json = "auspice/CNR-ncov_data.json" ,  
 
 
