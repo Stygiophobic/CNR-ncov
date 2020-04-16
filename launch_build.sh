@@ -11,6 +11,9 @@ tr "|" "_" < /srv/nfs/ngs-stockage/NGS_Virologie/HadrienR/ncov-data/sequences_te
 fasta="/srv/nfs/ngs-stockage/NGS_Virologie/HadrienR/ncov-data/sequences.fasta"
 metadata="/srv/nfs/ngs-stockage/NGS_Virologie/HadrienR/ncov-data/metadata.tsv"
 
+rm auspice/CNR-ncov_data.json
+rm temp/*
+
 k5start -U -f /home/chu-lyon.fr/regueex/login.kt --  nohup singularity exec $singularity_img snakemake \
                                     --config input_sequence=$fasta \
                                              input_metadata=$metadata > /srv/nfs/ngs-stockage/NGS_Virologie/HadrienR/ncov-data/CR.txt &

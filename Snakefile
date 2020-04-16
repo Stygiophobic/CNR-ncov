@@ -36,6 +36,7 @@ rule augur_align:
         "augur align "
         "--sequences {input.filter_fasta} "
         "--fill-gaps "
+        "--nthreads 6 "
         "--output {output} "
 
 rule augur_raw_tree:
@@ -46,6 +47,7 @@ rule augur_raw_tree:
     shell:
         "augur tree "
         "--alignment {input} "
+        "--nthreads 6 "
         "--output {output} "
 
 rule augur_refine:
@@ -59,6 +61,7 @@ rule augur_refine:
     shell:
         "augur refine "
         "--tree {input.tree} "
+        "--root hCoV-19/Wuhan-Hu-1/2019_EPI_ISL_402125_2019-12-31 "
         "--alignment {input.alignment} "
         "--metadata {input.meta} "
         "--timetree "
@@ -92,5 +95,6 @@ rule augur_export:
         "--tree {input.tree} "
         "--metadata {input.meta} "
         "--title 'NEXTRAIN VISUALISATION' "
+        "--color-by-metadata 'status' 'region' 'country' "
         "--node-data {input.branch_lengths} {input.nt_muts} "
         "--output {output.auspice_json} "
